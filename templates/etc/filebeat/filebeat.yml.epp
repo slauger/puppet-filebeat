@@ -1,0 +1,15 @@
+# This file is managed by Puppet; changes may be overwritten
+
+filebeat.config.inputs:
+  enabled: true
+  path: ${path.config}/inputs.d/*.yml
+  reload.enabled: false
+  reload.period: 10s
+
+filebeat.config.modules:
+  enabled: true
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+  reload.period: 10s
+
+<%= $config %>

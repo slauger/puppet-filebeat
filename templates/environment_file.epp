@@ -1,0 +1,3 @@
+<% $filebeat::env.each | String $key, String $value| { -%>
+<%= $key %>="<%= $value %>"
+<% } -%>

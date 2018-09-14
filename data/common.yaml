@@ -1,0 +1,16 @@
+---
+filebeat::package_name: 'filebeat'
+filebeat::package_ensure: 'present'
+filebeat::package_provider: ~
+filebeat::package_source: ~
+filebeat::service_name: 'filebeat'
+filebeat::service_ensure: 'running'
+filebeat::service_enable: true
+filebeat::environment_file: '/etc/sysconfig/filebeat'
+filebeat::inputs: {}
+filebeat::modules: {}
+filebeat::config:
+  name: '%{facts.fqdn}'
+  logging.level: 'error'
+  logging.selectors: ["*"]
+filebeat::env: {}

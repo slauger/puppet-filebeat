@@ -1,3 +1,4 @@
+# This file is managed by Puppet; changes may be overwritten
 <% $filebeat::env.each | String $key, String $value| { -%>
 <%= $key %>="<%= $value %>"
 <% } -%>

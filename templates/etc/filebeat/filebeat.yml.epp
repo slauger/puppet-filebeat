@@ -1,6 +1,6 @@
 # This file is managed by Puppet; changes may be overwritten
 
-<%- if (versioncmp($facts['filebeat_version'], '6.3') <= 0) { -%>
+<%- if ($facts['filebeat_version'] and versioncmp($facts['filebeat_version'], '6.3') <= 0) { -%>
 filebeat.prospectors:
 <%- } else { -%>
 filebeat.config.inputs:

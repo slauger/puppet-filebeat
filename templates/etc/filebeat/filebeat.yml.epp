@@ -1,10 +1,10 @@
 # This file is managed by Puppet; changes may be overwritten
 
-<%- if (versioncmp($fact['filebeat_version'], '6.3') <= 0) { -%>
+<%- if (versioncmp($facts['filebeat_version'], '6.3') <= 0) { -%>
 filebeat.prospectors:
 <%- } else { -%>
 filebeat.config.inputs:
-<&- } %>
+<%- } -%>
   enabled: true
   path: ${path.config}/inputs.d/*.yml
   reload.enabled: false

@@ -5,10 +5,13 @@ describe 'filebeat::input' do
   let(:params) do
     {
       'config' => [
-        'type'    => 'log',
-	'enabled' => 'true',
-	'paths'   => ['/var/log/httpd/*_access.log', '/var/log/httpd/*_access_ssl.log']
-      ]
+        'type' => 'log',
+        'enabled' => 'true',
+        'paths' => [
+          '/var/log/httpd/*_access.log',
+          '/var/log/httpd/*_access_ssl.log',
+        ],
+      ],
     }
   end
 

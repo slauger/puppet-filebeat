@@ -6,9 +6,9 @@ describe 'filebeat::module' do
     {
       'config' => [
         'module' => 'system',
-	'syslog' => {'enabled' => true},
-	'auth'   => {'enabled' => true}
-      ]
+        'syslog' => { 'enabled' => true },
+        'auth' => { 'enabled' => true },
+      ],
     }
   end
 

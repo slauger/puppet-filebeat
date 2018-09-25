@@ -4,10 +4,10 @@ describe 'filebeat::module' do
   let(:title) { 'apache' }
   let(:params) do
     {
-      'config': [
-        'module': 'system',
-	'syslog': {'enabled' => true},
-	'auth': {'enabled' => true}
+      'config' => [
+        'module' => 'system',
+	'syslog' => {'enabled' => true},
+	'auth'   => {'enabled' => true}
       ]
     }
   end

@@ -1,0 +1,17 @@
+---
+Rakefile:
+  changelog_project: 'puppet-filebeat'
+Gemfile:
+  optional:
+    ':release':
+      - gem: 'github_changelog_generator'
+        git: 'https://github.com/skywinder/github-changelog-generator.git'
+        condition: "RUBY_VERSION >= '2.2.2'"
+      - gem: 'puppet-blacksmith'
+      - gem: 'voxpupuli-release'
+        git: 'https://github.com/voxpupuli/voxpupuli-release-gem.git'
+      - gem: 'puppet-strings'
+spec/default_facts.yml:
+  filebeat_version: "6.4.1"
+appveyor.yml:
+  delete: true

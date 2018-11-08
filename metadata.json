@@ -1,7 +1,7 @@
 {
   "name": "slauger-filebeat",
   "version": "1.0.0",
-  "author": "Simon Lauger",
+  "author": "slauger",
   "summary": "This module installs, configures and manages the Filebeat service.",
   "license": "MIT",
   "source": "git://github.com/slauger/puppet-filebeat.git",
@@ -63,7 +63,7 @@
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
-  "pdk-version": "1.6.1",
+  "pdk-version": "1.7.1",
   "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",
-  "template-ref": "1.6.1-0-g6b0d497"
+  "template-ref": "1.7.1-0-g810b982"
 }

@@ -16,7 +16,6 @@ Gemfile:
       - gem: 'voxpupuli-release'
         git: 'https://github.com/voxpupuli/voxpupuli-release-gem.git'
       - gem: 'puppet-strings'
-'spec/default_facts.yml':
 
 appveyor.yml:
   delete: true

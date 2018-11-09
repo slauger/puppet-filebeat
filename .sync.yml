@@ -1,6 +1,11 @@
 ---
 Rakefile:
+  requires:
+    - 'puppet_blacksmith/rake_tasks'
+    - 'voxpupuli/release/rake_tasks'
+    - 'puppet-strings/tasks'
   changelog_project: 'puppet-filebeat'
+
 Gemfile:
   optional:
     ':release':
@@ -11,7 +16,7 @@ Gemfile:
       - gem: 'voxpupuli-release'
         git: 'https://github.com/voxpupuli/voxpupuli-release-gem.git'
       - gem: 'puppet-strings'
-spec/default_facts.yml:
-  filebeat_version: "6.4.1"
+'spec/default_facts.yml':
+
 appveyor.yml:
   delete: true
